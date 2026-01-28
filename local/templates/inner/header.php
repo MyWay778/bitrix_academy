@@ -37,10 +37,8 @@ $request = \Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 						],
 						false
 				); ?>
-				<?php if($request->getRequestedPageDirectory() === '/contacts/'): ?>
 				<div class="alert alert-info mt-3">
-					<?= getMessage('ACADEMY_INNER_ABOUT_CONTRACT'); ?>
+					<?= $APPLICATION->ShowProperty('left_block_content'); ?>
 				</div>
-				<?php endif; ?>
 			</div>
 			<div class="col-12 col-lg-8">

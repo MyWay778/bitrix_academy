@@ -49,7 +49,8 @@ $countOpenedItems = 0;
 		);
 		?>
 		<span class="ms-3">
-			<?php $APPLICATION->IncludeComponent(
+			<?php
+			$APPLICATION->IncludeComponent(
 				"bitrix:main.include",
 				"",
 				[
@@ -59,9 +60,10 @@ $countOpenedItems = 0;
 						"PATH" => "/include/opening_hours_top.php",
 				],
 				$component
-			) ?>
+			)
+			?>
 		</span>
 	</div>
 <?else:?>
-	<?php showError(\Bitrix\Main\Localization\Loc::getMessage("ACADEMY_NO_MENU", ["#TYPE#" => $arParams["ROOT_MENU_TYPE"]])) ?>
-<?endif?>
+	<?php  //showError(\Bitrix\Main\Localization\Loc::getMessage("ACADEMY_NO_MENU", ["#TYPE#" => $arParams["ROOT_MENU_TYPE"]])) ?>
+<? endif ?>
