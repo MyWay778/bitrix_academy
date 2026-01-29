@@ -185,7 +185,7 @@ $APPLICATION->SetTitle("Мебельная компания");
 											<img class="img img_lazy lazyload object-fit-cover"
 													src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
 													alt="image"
-													data-src="<?=DEFAULT_TEMPLATE_PATH?>/upload/card-news/0.png">
+													data-src="<?=DEFAULT_TEMPLATE_PATH?>/upload/card-news/0.jpg">
 										</div>
 									</div>
 								</div>
