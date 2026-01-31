@@ -3,7 +3,7 @@
  * @global CMain $APPLICATION
  */
 ?>
-		</div>
+	</div>
 	</main>
 	<footer class="footer">
 		<div class="container-lg">
@@ -13,9 +13,9 @@
 						<div class="image__inner">
 							<a class="a" href="<?=SITE_DIR?>">
 								<img class="img img_lazy lazyload"
-									 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-									 alt="image"
-									 data-src="<?=DEFAULT_TEMPLATE_PATH?>/images/logo.png">
+										src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+										alt="image"
+										data-src="<?=DEFAULT_TEMPLATE_PATH?>/images/logo.png">
 							</a>
 						</div>
 					</div>
@@ -27,17 +27,17 @@
 				</div>
 				<div class="footer__contact"><small>Время работы</small>
 					<div>
-						<?$APPLICATION->IncludeComponent(
+						<? $APPLICATION->IncludeComponent(
 								"bitrix:main.include",
 								"",
-								Array(
+								[
 										"AREA_FILE_RECURSIVE" => "Y",
 										"AREA_FILE_SHOW" => "file",
 										"AREA_FILE_SUFFIX" => "inc",
 										"EDIT_TEMPLATE" => "",
 										"PATH" => "/include/opening_hours.php"
-								)
-						);?>
+								]
+						); ?>
 					</div>
 				</div>
 				<div class="footer__contact">
@@ -53,16 +53,20 @@
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Отзывы</a></div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">История</a></div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Вакансии</a></div>
-					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Миссия и стратегия</a></div>
+					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Миссия и стратегия</a>
+					</div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Новости</a></div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Партнерам</a></div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Контакты</a></div>
 					<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)">Акции</a></div>
 					<div class="toolbar__li toolbar__li_social">
 						<div class="toolbar__list">
-							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i class="fa-brands fa-vk"></i></a></div>
-							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a></div>
-							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i class="fa-brands fa-telegram"></i></a></div>
+							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i
+											class="fa-brands fa-vk"></i></a></div>
+							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i
+											class="fa-brands fa-youtube"></i></a></div>
+							<div class="toolbar__li"><a class="toolbar__link" href="javascript:void(0)"><i
+											class="fa-brands fa-telegram"></i></a></div>
 						</div>
 					</div>
 				</div>
@@ -76,7 +80,9 @@
 					</div>
 					<div class="copyright__li d-flex align-items-center gap-1">
 						<a class="a" href="javascript:void(0)">Разработка сайта</a> —
-						<img class="img img_lazy lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="image" data-src="<?=DEFAULT_TEMPLATE_PATH?>/images/developer.svg">
+						<img class="img img_lazy lazyload"
+								src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+								alt="image" data-src="<?=DEFAULT_TEMPLATE_PATH?>/images/developer.svg">
 					</div>
 				</div>
 			</div>
@@ -95,22 +101,22 @@
 		</div>
 		<div class="offcanvas-body p-0">
 			<?php $APPLICATION->IncludeComponent(
-				"bitrix:menu",
-				"mobile",
-				[
-					"ALLOW_MULTI_SELECT" => "N",
-					"CHILD_MENU_TYPE" => "left",
-					"DELAY" => "N",
-					"MAX_LEVEL" => "2",
-					"MENU_CACHE_GET_VARS" => "",
-					"MENU_CACHE_TIME" => "3600",
-					"MENU_CACHE_TYPE" => "N",
-					"MENU_CACHE_USE_GROUPS" => "Y",
-					"ROOT_MENU_TYPE" => "top",
-					"USE_EXT" => "Y",
-					"COMPONENT_TEMPLATE" => "main",
-				],
-				false
+					"bitrix:menu",
+					"mobile",
+					[
+							"ALLOW_MULTI_SELECT" => "N",
+							"CHILD_MENU_TYPE" => "left",
+							"DELAY" => "N",
+							"MAX_LEVEL" => "2",
+							"MENU_CACHE_GET_VARS" => "",
+							"MENU_CACHE_TIME" => "3600",
+							"MENU_CACHE_TYPE" => "N",
+							"MENU_CACHE_USE_GROUPS" => "Y",
+							"ROOT_MENU_TYPE" => "top",
+							"USE_EXT" => "Y",
+							"COMPONENT_TEMPLATE" => "main",
+					],
+					false
 			) ?>
 		</div>
 		<div class="p-3 flex-grow-0 flex-shrink-1 text-center">
@@ -118,29 +124,23 @@
 			<div class="mt-2 text-muted">ежедневно с 9-00 до 18-00</div>
 		</div>
 	</div>
-	<div class="offcanvas offcanvas-start" id="SIDE_SEARCH">
-		<div class="offcanvas-header ps-0 pt-3 pb-0">
-			<div class="flex-grow-1 pe-3">
-				<div class="search">
-					<div class="search__form"><input class="form-control rounded-pill" id="uniq169564607471910" placeholder="Поиск по сайту" type="text">
-						<div class="search__icon fa-solid fa-magnifying-glass"></div>
-					</div>
-				</div>
-			</div>
-			<div class="offcanvas__btn" data-bs-toggle="offcanvas" data-bs-target="#SIDE_PANEL" role="button">
-				<div class="fa-solid fa-xmark"></div>
-			</div>
-		</div>
-		<div class="offcanvas-body p-0">
-			<div class="list-group list-group-flush">
-				<a class="a list-group-item list-group-item-action" href="javascript:void(0)"><b>Диван</b></a>
-				<a class="a list-group-item list-group-item-action" href="javascript:void(0)"><b>Диван</b> угловой</a>
-				<a class="a list-group-item list-group-item-action" href="javascript:void(0)"><b>Диван</b> угловой тканевый</a>
-				<a class="a list-group-item list-group-item-action" href="javascript:void(0)"><b>Диван</b> угловой тканевый Мускари</a>
-				<a class="a list-group-item list-group-item-action" href="javascript:void(0)"><b>Диван</b> угловой тканевый Мускари</a>
-			</div>
-		</div>
-		<div class="p-3 flex-grow-0 flex-shrink-1 text-center">
-			<a class="btn btn-outline-primary rounded-pill w-100" role="button" href="javascript:void(0)">Смотреть все результаты</a>
-		</div>
-	</div>
+<? $APPLICATION->IncludeComponent(
+		"bitrix:search.title",
+		"mobile",
+		[
+				"CATEGORY_0" => ["iblock_products"],
+				"CATEGORY_0_TITLE" => "",
+				"CATEGORY_0_iblock_products" => ["2"],
+				"CATEGORY_0_main" => [""],
+				"CHECK_DATES" => "N",
+				"CONTAINER_ID" => "SIDE_SEARCH",
+				"INPUT_ID" => "title-search-input-mobile",
+				"NUM_CATEGORIES" => "1",
+				"ORDER" => "date",
+				"PAGE" => "#SITE_DIR#search/index.php",
+				"SHOW_INPUT" => "Y",
+				"SHOW_OTHERS" => "N",
+				"TOP_COUNT" => "5",
+				"USE_LANGUAGE_GUESS" => "Y"
+		]
+); ?>
